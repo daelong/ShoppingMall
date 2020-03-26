@@ -1,0 +1,19 @@
+package project2;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+public class LoginServlet extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		String id = request.getParameter("ID");
+		String password = request.getParameter("PASSWORD");
+		if(checkLoginInfo(id, password)) {
+			HttpSession session = request.getSession();
+			session.setAttribute("LOGIN_ID", id);
+		}
+		response.sendRedirect(currentURL);
+	}
+
+}

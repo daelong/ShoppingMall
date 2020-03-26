@@ -1,0 +1,16 @@
+package project2;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+public class IdOverlapServlet extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		response.setCharacterEncoding("euc-kr");
+		String name = request.getParameter("NAME");
+		String id = request.getParameter("ID");
+		String password = request.getParameter("PASSWORD");
+	}
+
+}

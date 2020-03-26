@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\2020java\WebProject1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3092929948.index
+\project2\src
+C:\2020java\WebProject1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3340904575.index
+\project2\src

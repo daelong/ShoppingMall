@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>이대현의 쇼핑몰</title>
+</head>
+<body>
+	<H3>대현이의 쇼핑몰</H3>
+	<table border=1 cellpadding=10>
+		<tr>
+			<td width=150 valign=top>
+			<c:choose>
+				<c:when test="${sessionScope.LOGIN_ID == null }">
+					<a href="Home.jsp?BODY_PATH=LoginForm.html">로그인</a><br>
+				</c:when>
+				<c:otherwise>
+					<a href="logout">로그아웃</a><br>
+				</c:otherwise>
+			</c:choose>
+				<a href="Home.jsp?BODY_PATH=Intro.html">쇼핑몰 소개</a><br>
+				<a href>상의</a><br>
+				<a href>하의</a><br>
+				<a href>아우터</a><br>
+				<a href>액세서리</a><br>
+				<a href>잡화</a><br>
+			</td>
+			<td width=650 valign=top>
+				<jsp:include page="${param.BODY_PATH}"/>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

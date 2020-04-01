@@ -15,7 +15,7 @@
                     <TD width=300>이름</TD>
                     <TD width=80>상세설명</TD>
                     <TD width=90>가격</TD>
-                    <TD width=70>사진</TD>
+                    <TD width=70 height=50>사진</TD>
                 </TR>
                 <c:forEach var="cnt" begin="0" end="${BBS_LIST.listSize -1}">
                     <TR>
@@ -23,7 +23,8 @@
                             <TD><a href='Home.jsp?BODY_PATH=bbs-item?SEQ_NO=${BBS_LIST.seqNo[cnt]}'>${BBS_LIST.name[cnt]}</a></TD>
                             <TD>${BBS_LIST.content[cnt]}</TD>
                             <TD>${BBS_LIST.price[cnt]}</TD>
-                            <TD>${BBS_LIST.photo[cnt]}</TD>
+                            <!--<TD>${BBS_LIST.photo[cnt]}</TD> -->
+                            <td><img src="${BBS_LIST.photo[cnt]}" width=70 height=50></TD><br>
                     </TR>
                 </c:forEach>
           </TABLE>

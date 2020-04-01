@@ -45,7 +45,7 @@ public class BBSItemServlet extends HttpServlet{
 			catch(Exception ignored) {
 			}
 		}
-		RequestDispatcher dispatcher = request.getRequestDispatcher("BBSItemView.jsp?");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("BBSItemView.jsp");
 		dispatcher.forward(request, response);
 	}
 }

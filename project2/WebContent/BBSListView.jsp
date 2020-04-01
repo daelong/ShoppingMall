@@ -18,8 +18,9 @@
                             <TD>${BBS_LIST.name[cnt]}</TD>
                             <TD>${BBS_LIST.content[cnt]}</TD>
                             <TD>${BBS_LIST.price[cnt]}</TD>
-                            <TD><img src="${BBS_LIST.photo[cnt]}" width=70 height=50></TD><br>
+                            <td><img src="${BBS_LIST.photo[cnt]}" width=70 height=50></TD><br>
                     </TR>
+                    ${BBS_LIST.photo[cnt]}
                 </c:forEach>
           </TABLE>
           <c:if test="${!BBS_LIST.lastPage}">

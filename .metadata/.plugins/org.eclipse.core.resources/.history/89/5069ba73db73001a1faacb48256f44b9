@@ -1,0 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="UTF-8"%>
+<form action=logout method=get onSubmit="CURRENT_URL.value=window.location.href">
+	안녕하세요:${sessionScope.LOGIN_ID }님<br>
+	<input type=HIDDEN name=CURRENT_URL>
+	<input type=submit value='로그아웃'><br>
+	<button onclick="location=''/memberinfo'">회원정보보기</button>
+</form>

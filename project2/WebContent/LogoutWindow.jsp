@@ -5,3 +5,4 @@
 	<input type=HIDDEN name=CURRENT_URL>
 	<input type=submit value='로그아웃'><br>
 </form>
+<button onclick="location='member-info'">회원정보보기</button>

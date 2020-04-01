@@ -14,6 +14,7 @@
 		<td>${ITEM.itemPrice }</td><br>
 		<td><img src="${ITEM.itemPhoto}" width=512 height=384></td><br>
 		<!--  <td width=512 height=384>${ITEM.itemPhoto }</td><br>-->
+		${ITEM.itemPhoto}
 	</tr>
 </table>
 

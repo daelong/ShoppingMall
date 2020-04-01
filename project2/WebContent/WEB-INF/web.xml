@@ -64,4 +64,12 @@
 	<servlet-name>imgup-Servlet</servlet-name>
 	<url-pattern>/imgup</url-pattern>
 </servlet-mapping>
+<servlet>
+	<servlet-name>memberinfo-Servlet</servlet-name>
+	<servlet-class>project2.MemberInfoServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>memberinfo-Servlet</servlet-name>
+	<url-pattern>/member-info</url-pattern>
+</servlet-mapping>
 </web-app>

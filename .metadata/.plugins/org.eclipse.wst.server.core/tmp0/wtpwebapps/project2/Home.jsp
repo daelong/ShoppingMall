@@ -1,14 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>ÀÌ´ëÇöÀÇ ¼îÇÎ¸ô</title>
+<meta charset="UTF-8">
+<title>ì´ëŒ€í˜„ì˜ ì‡¼í•‘ëª°</title>
 </head>
 <body>
-	<H3>´ëÇöÀÌÀÇ ¼îÇÎ¸ô</H3>
+	<H3>ëŒ€í˜„ì´ì˜ ì‡¼í•‘ëª°</H3>
 	<table border=1 cellpadding=10>
 		<tr>
 			<td width=150 valign=top>
@@ -20,12 +20,12 @@
 					<jsp:include page="LogoutWindow.jsp"/>
 				</c:otherwise>
 			</c:choose>
-				<a href="Home.jsp?BODY_PATH=Intro.html">¼îÇÎ¸ô ¼Ò°³</a><br>
-				<a href>»óÀÇ</a><br>
-				<a href>ÇÏÀÇ</a><br>
-				<a href>¾Æ¿ìÅÍ</a><br>
-				<a href>¾×¼¼¼­¸®</a><br>
-				<a href>ÀâÈ­</a><br>
+				<a href="Home.jsp?BODY_PATH=Intro.html">ì‡¼í•‘ëª° ì†Œê°œ</a><br>
+				<a href="Home.jsp?BODY_PATH=/top-board">ìƒì˜</a><br>
+				<a href>í•˜ì˜</a><br>
+				<a href>ì•„ìš°í„°</a><br>
+				<a href>ì•¡ì„¸ì„œë¦¬</a><br>
+				<a href>ìž¡í™”</a><br>
 			</td>
 			<td width=650 valign=top>
 				<jsp:include page="${param.BODY_PATH}"/>

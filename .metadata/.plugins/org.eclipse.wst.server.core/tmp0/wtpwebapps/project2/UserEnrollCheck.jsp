@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>È¸¿ø°¡ÀÔ ½ÇÆÐ</title>
+<meta charset="UTF-8">
+<title>íšŒì›ê°€ìž… ì‹¤íŒ¨</title>
 </head>
 <body>
 	<c:choose>
 		<c:when test="${param.RESULT==1 }">
-		È¸¿ø°¡ÀÔ¿¡ ¼º°øÇÏ¿´½À´Ï´Ù!
+		íšŒì›ê°€ìž…ì— ì„±ê³µí•˜ì˜€ìŠµë‹ˆë‹¤!
 		</c:when>
 		<c:otherwise>
-		ÀÌ ¾ÆÀÌµð´Â »ç¿ëÇÏ½Ç¼ö ¾ø½À´Ï´Ù.
+		ì´ ì•„ì´ë””ëŠ” ì‚¬ìš©í•˜ì‹¤ìˆ˜ ì—†ìŠµë‹ˆë‹¤.
 		</c:otherwise>
 	</c:choose>
 </body>

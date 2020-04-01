@@ -32,4 +32,36 @@
 	<servlet-name>IdCheck-Servlet</servlet-name>
 	<url-pattern>/idcheck</url-pattern>
 </servlet-mapping>
+<servlet>
+	<servlet-name>BBSList-Servlet</servlet-name>
+	<servlet-class>project2.BBSListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>BBSList-Servlet</servlet-name>
+	<url-pattern>/bbs-list</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>BBSItem-Servlet</servlet-name>
+	<servlet-class>project2.BBSItemServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>BBSItem-Servlet</servlet-name>
+	<url-pattern>/bbs-item</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>TopBoard-Servlet</servlet-name>
+	<servlet-class>project2.TopBoardServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>TopBoard-Servlet</servlet-name>
+	<url-pattern>/top-board</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>imgup-Servlet</servlet-name>
+	<servlet-class>project2.imgupServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>imgup-Servlet</servlet-name>
+	<url-pattern>/imgup</url-pattern>
+</servlet-mapping>
 </web-app>

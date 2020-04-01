@@ -7,7 +7,7 @@ import java.sql.*;
 
 public class IdOverlapServlet extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
-		response.setCharacterEncoding("euc-kr");
+		response.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("NAME");
 		String id = request.getParameter("ID");
 		String password = request.getParameter("PASSWORD");

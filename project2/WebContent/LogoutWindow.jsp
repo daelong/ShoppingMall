@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <form action=logout method=get onSubmit="CURRENT_URL.value=window.location.href">
-	¾È³çÇÏ¼¼¿ä:${sessionScope.LOGIN_ID }´Ô<br>
+	ì•ˆë…•í•˜ì„¸ìš”:${sessionScope.LOGIN_ID }ë‹˜<br>
 	<input type=HIDDEN name=CURRENT_URL>
-	<input type=submit value='·Î±×¾Æ¿ô'><br>
+	<input type=submit value='ë¡œê·¸ì•„ì›ƒ'><br>
 </form>

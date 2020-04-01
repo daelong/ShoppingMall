@@ -1,0 +1,17 @@
+package project2;
+
+import mall.BBSItem;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+public class BBSItemServlet extends HttpServlet{
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		String itemSeqNO = request.getParameter("ITEMSEQNO");
+		String itemName = request.getParameter("ITEMNAME");
+		String itemContent = request.getParameter("ITEMCONTENT");
+		String itemPhoto = request.getParameter("ITEMPHOTO");
+	}
+
+}

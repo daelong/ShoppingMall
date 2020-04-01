@@ -1,0 +1,15 @@
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<H4>아이템 읽기</H4>
+<table border=1>
+	<tr>
+		<td>아이템 이름</td>
+		${ITEM.itemName }<br>
+		<td>아이템 상세설명</td>
+		${ITEM.itemContent }<br>
+		<td>아이템 가격</td>
+		${ITEM.itemPrice }<br>
+		<td>아이템 사진</td>
+		${ITEM.itemPhoto }<br>
+	</tr>
+</table>
+

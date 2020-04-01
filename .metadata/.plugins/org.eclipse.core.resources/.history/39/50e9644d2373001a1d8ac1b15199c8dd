@@ -1,0 +1,16 @@
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<jsp:useBean id="bbsItem" class="mall.BBSItem" />
+<H4>아이템 읽기</H4>
+<table border=1>
+	<tr>
+		<td>아이템 이름</td>
+		<td><%=bbsItem.getItemName() %></td><br>
+		<td>아이템 상세설명</td>
+		<td><%=bbsItem.getItemContent() %></td><br>
+		<td>아이템 가격</td>
+		<td><%=bbsItem.getItemPrice() %></td><br>
+		<td>아이템 사진</td>
+		<td><%=bbsItem.getItemPhoto() %></td><br>
+	</tr>
+</table>
+

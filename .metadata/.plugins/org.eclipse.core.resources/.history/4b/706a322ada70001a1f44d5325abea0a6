@@ -1,0 +1,12 @@
+<%@page contentType= “text/html; charset=euc-kr ”%>
+<jsp:useBean id=“bbsItem” class= “mall.BBSItem” />
+<jsp:setProperty name= “bbsItem ” property= “seqNo ” value= “${param.SEQ_NO} ” />
+<H4>아이템 읽기</H4>
+<table border=1>
+	<tr>
+		<td>아이템이름</td>
+		<td><%=bbsItem.getName() %></td>
+		
+	</tr>
+</table>
+

@@ -1,0 +1,29 @@
+package project2;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+public class TopBoardInputServlet extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		request.setCharacterEncoding("UTF-8");
+		HttpSession session = request.getSession();
+		String id = (String)session.getAttribute("LOGIN_ID");
+		String name = request.getParameter("NAME");
+		String content = request.getParameter("CONTENT");
+		String price = request.getParameter("PRICE");
+		//String PHOTO = request.getParameter("PHOTO");
+		
+		String realFolder = "";
+		String filename1 = "";
+		int maxSize = 1024*1024*5;
+		String encType = "UTF-8";
+		String savefile = "img";
+		ServletContext scontext = request.getServletContext();
+		System.out.println("사진의 경로 : " + scontext.getContextPath());
+		System.out.println("사진의 경로 : " + scontext.getRealPath(savefile));
+		
+	}
+
+}

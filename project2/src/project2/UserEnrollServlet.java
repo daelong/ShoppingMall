@@ -21,7 +21,7 @@ public class UserEnrollServlet extends HttpServlet{
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/project2?serverTimezone=UTC", "root", "root");
 			if(conn==null)
-				throw new Exception("µ¥ÀÌÅÍº£ÀÌ½º¿¡ ¿¬°áÇÒ ¼ö ¾ø½À´Ï´Ù.");
+				throw new Exception("ë°ì´í„°ë² ì´ìŠ¤ì— ì—°ê²°í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			
 			stmt1 = conn.createStatement();
 			ResultSet rs = stmt1.executeQuery("select id from userinfo where id = '" + id + "';");
@@ -37,7 +37,7 @@ public class UserEnrollServlet extends HttpServlet{
 				String command = String.format("insert into userinfo (name, id, password) values('%s', '%s', '%s')", name, id, password);
 				int rowNum = stmt.executeUpdate(command);
 				if(rowNum < 1)
-					throw new Exception("µ¥ÀÌÅÍ¸¦ DB¿¡ ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+					throw new Exception("ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ DBï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			}
 			else if(idCheck == false){
 				result = 0;

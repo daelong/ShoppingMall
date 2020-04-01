@@ -21,6 +21,7 @@ public class BBSItemServlet extends HttpServlet{
 			ResultSet rs = stmt.executeQuery("select * from iteminfo where seqno = '" + itemSeqNo + "';");
 			if(rs.next()) {
 				item.setItemContent(rs.getString("content"));
+				item.setItemId(rs.getString("Id"));
 				item.setItemName(rs.getString("name"));
 				item.setItemPrice(rs.getString("price"));
 				item.setItemPhoto(rs.getString("photo"));

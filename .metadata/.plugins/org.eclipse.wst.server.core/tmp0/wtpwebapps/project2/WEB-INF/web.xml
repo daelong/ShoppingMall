@@ -72,4 +72,20 @@
 	<servlet-name>memberinfo-Servlet</servlet-name>
 	<url-pattern>/member-info</url-pattern>
 </servlet-mapping>
+<servlet>
+	<servlet-name>memberupdate-Servlet</servlet-name>
+	<servlet-class>project2.MemberUpdateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>memberupdate-Servlet</servlet-name>
+	<url-pattern>/member-update</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>topboardinput-Servlet</servlet-name>
+	<servlet-class>project2.TopBoardInputServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>topboardinput-Servlet</servlet-name>
+	<url-pattern>/top-board-input</url-pattern>
+</servlet-mapping>
 </web-app>

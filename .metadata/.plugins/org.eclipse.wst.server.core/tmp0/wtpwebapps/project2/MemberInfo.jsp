@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-${ID }<br>
-${NAME }
+${LOGIN_ID }<br>
+${LOGIN_NAME }<br>
+<button onclick="location='MemberUpdate.jsp'">회원정보수정</button>
 </body>
 </html>

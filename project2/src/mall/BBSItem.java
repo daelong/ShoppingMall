@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 public class BBSItem {
 	private int itemSeqNo;
+	private String itemId;
 	private String itemName;
 	private String itemContent;
 	private String itemPrice;
@@ -13,6 +14,12 @@ public class BBSItem {
 	}
 	public void setItemSeqNo(int itemSeqNo) {
 		this.itemSeqNo = itemSeqNo;
+	}
+	public String getItemId() {
+		return itemId;
+	}
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
 	}
 	public String getItemName() {
 		return itemName;

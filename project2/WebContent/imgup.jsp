@@ -10,8 +10,9 @@
  int maxSize = 1024*1024*5;
  String encType = "UTF-8";
  String savefile = "img";
- ServletContext scontext = getServletContext();
+ ServletContext scontext = request.getServletContext();
  realFolder = scontext.getRealPath(savefile);
+ System.out.println(realFolder);
  
  try{
   MultipartRequest multi=new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
@@ -24,6 +25,7 @@
  }
  
  String fullpath = realFolder + "\\" + filename1;
+ System.out.println(fullpath);
 %>
 <!DOCTYPE html>
 <html>

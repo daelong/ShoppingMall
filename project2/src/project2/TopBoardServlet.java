@@ -38,11 +38,11 @@ public class TopBoardServlet extends HttpServlet{
 				 if (!rs.next())
 					 break;
 				 list.setSeqNo(cnt, rs.getInt("seqNo"));
+				 list.setId(cnt, rs.getString("id"));
 				 list.setName(cnt, rs.getString("name"));
 				 list.setContent(cnt, rs.getString("content"));
 				 list.setPrice(cnt, rs.getString("price"));
 				 list.setPhoto(cnt, rs.getString("photo"));
-				 list.setType(cnt, rs.getString("type"));
 			 }
 			 if (!rs.next())
 				 list.setLastPage(true);

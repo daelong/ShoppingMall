@@ -22,8 +22,10 @@ public class MemberInfoServlet extends HttpServlet{
 			ResultSet rs = stmt.executeQuery("select * from userinfo where id = '" + id + "';");
 			if(rs.next())
 				name = rs.getString("name");
-			request.setAttribute("NAME", name);
-			request.setAttribute("ID", id);
+			session.setAttribute("LOGIN_ID", id);
+			session.setAttribute("LOGIN_NAME", name);
+			//request.setAttribute("NAME", name);
+			//request.setAttribute("ID", id);
 		}
 		catch(Exception e) {
             throw new ServletException(e);

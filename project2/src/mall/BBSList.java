@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 public class BBSList {
         private ArrayList<Integer> seqNoList = new ArrayList<Integer>();
+        private ArrayList<String> idList = new ArrayList<String>();
         private ArrayList<String> nameList = new ArrayList<String>();
         private ArrayList<String> contentList = new ArrayList<String>();
         private ArrayList<String> priceList = new ArrayList<String>();
@@ -15,6 +16,9 @@ public class BBSList {
         public void setSeqNo(int index, Integer seqNo) {
              this.seqNoList.add(index, seqNo);
         }
+        public void setId(int index, String id) {
+            this.idList.add(index, id);
+       }
         public void setName(int index, String name) {
              this.nameList.add(index, name);
         }
@@ -35,6 +39,9 @@ public class BBSList {
         }
         public Integer[] getSeqNo() {
             return seqNoList.toArray(new Integer[seqNoList.size()]);
+       }
+        public String[] getId() {
+            return idList.toArray(new String[idList.size()]);
        }
        public String[] getName() {
             return nameList.toArray(new String[nameList.size()]);
